@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  height: 100%;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.bg-color {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(145deg, #111111, #1c1c1c);
+  z-index: -1;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.nav-links a {
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.hero {
+  padding-top: 120px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+
+section {
+  padding: 60px 30px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; 
+  }
+}
